@@ -17,19 +17,16 @@ $(document).ready(function(){
                   +first_name
                   + " " 
                   +last_name
-                  +'</h2><h5>Click for description!</h5></div>';
+                  +'</h2><h5>Click for description!</h5><p class="desc">'
+                  +description
+                  +'</p></div>';
         
-        var hiddenDis = '<div class="descriptionCard hidden"><p>'                      +description
-                        +'</p></div>';
-
         $('.card_div').append(row);
-        $('.card_div').append(hiddenDis);
 
         clearInputs();
     });
 
     $(document).on('click', '.user_card', function(){
-        $(this).addClass('hidden');
-        $(this).next('.descriptionCard').removeClass('hidden');
+        $(this).children().toggle();
     });
 });
