@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    margin-bottom: 5px;
+}
+
+#wrapper{
+    width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 0;
+    border: 2px solid black;
+}
+
+#description{
+    display: block;
+}
+
+#form_div{
+    width: 40%;
+    display: inline-block;
+    font-size: 12pt;
+}
+
+.card_div{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12pt;
+    margin-left: 40px;
+}
+
+.user_card, .descriptionCard{
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+#first_name, #last_name{
+    margin-bottom: 10px;
+}
+
+textarea{
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+input[type=submit]{
+    background:#ccc;
+    padding: 5px 40px;
+}
+
+.hidden{
+    display: none;
+}
+
